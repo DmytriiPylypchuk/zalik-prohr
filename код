@@ -1,1 +1,5 @@
 
+w1 = input("Перше слово: ")
+w2 = input("Друге слово: ")
+f = open("notations.txt", "r").read().replace(w1, w2)
+print(f)
