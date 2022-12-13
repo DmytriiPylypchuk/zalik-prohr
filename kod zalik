@@ -1,0 +1,11 @@
+import re
+
+text = open("TarasBulba.txt","r", encoding="utf-8")
+n = input("Введіть слово: ")
+sep = ''
+k=text.read()
+x=k.split('\n')
+for i in x:
+    q = re.split('[ ,.?!]', i)
+    if n in q:
+        print(i)
