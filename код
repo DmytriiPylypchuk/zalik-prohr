@@ -1,5 +1,9 @@
-
-w1 = input("Перше слово: ")
-w2 = input("Друге слово: ")
-f = open("notations.txt", "r").read().replace(w1, w2)
-print(f)
+text = open("notations.txt","r", encoding="utf-8")
+n = input("Введіть слово: ")
+sep = ''
+k=text.read()
+x=k.split('\n')
+for i in x:
+    q = i.split(" ")
+    if n in q or n+"." in q or n +"," in q:
+        print(i);
